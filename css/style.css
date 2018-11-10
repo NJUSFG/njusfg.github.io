@@ -21,22 +21,18 @@ div#route {
     height: 20px;
 }
 
-.column {
-    float: left;
-}
-
 div.nav {
-    width: 25%;
-    max-width: 200px;
-    min-width: 150px;
+    width: 200px;
     height: 100%;
     border: 5px;
+    float: left;
+    position: absolute;
 }
 
 div.content {
-    width: 75%;
-    min-width: 480px;
-    overflow: hidden;
+    float: left;
+    margin-left: 200px;
+    min-height: 480px;
 }
 
 div.clearfix {
@@ -54,4 +50,34 @@ div.clearfix > div {
     content: "";
     clear: both;
     display: table;
+}
+
+div.pinboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+div.namecard {
+    height: 120px;
+    width: 240px;
+    background-color: #EBEDEF;
+    padding: 10px;
+    margin: 15px;
+}
+
+img.portraits {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+p.profile {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.pinboard_title {
+    margin-left: 20px;
+    margin-bottom: 0px;
 }
