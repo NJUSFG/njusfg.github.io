@@ -1,24 +1,60 @@
+:root {
+    --main-bg-color: #2F2FA2;
+    --prime-block-bg-color: #F64C72;
+    --secondary-block-bg-color: #553D67;
+    --title-text-color: #F64C72;
+    --secondary-title-text-color: #99738E;
+    --main-text-color: #DDDDDD;
+}
+
 * {
     box-sizing: border-box;
+    color: var(--main-text-color);
+    font-family: 'Futura';
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 html {
     font-size: 14px;
 }
 
-div {
-    border: 1px red;
+div#header * {
+    color: var(--main-text-color);
+}
+
+div#header h2 {
+    font-size: 1.2em;
+    margin-bottom: 2px;
+}
+
+hr {
+    color: var(--main-text-color);
 }
 
 div#header {
     width: 100%;
-    height: 100px;
     border: 4px red;
 }
 
 div#route {
     width: 100%;
     height: 20px;
+    color: var(--secondary-title-text-color);
+}
+
+div#route * {
+    color: var(--secondary-title-text-color);
 }
 
 div.nav {
@@ -29,11 +65,45 @@ div.nav {
     position: absolute;
 }
 
+ul.navul {
+    margin-top: 4.3em;
+    padding: 0px;
+}
+
+li.navli {
+    color: var(--prime-block-bg-color);
+    list-style-type: none;
+    border: 2px solid var(--prime-block-bg-color);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li.navli:hover {
+    color: var(--main-text-color);
+    background-color: var(--prime-block-bg-color);
+    list-style-type: none;
+    border: 2px solid var(--prime-block-bg-color);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 div.content {
     float: left;
     margin-left: 200px;
     min-height: 480px;
 }
+
+.content p {
+    margin: 15px;
+}
+
 
 div.clearfix {
     min-height: 480px;
@@ -52,6 +122,11 @@ div.clearfix > div {
     display: table;
 }
 
+h2.pinboard_title {
+    color: var(--main-text-color);
+}
+
+
 div.pinboard {
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +136,8 @@ div.pinboard {
 div.namecard {
     height: 120px;
     width: 240px;
-    background-color: #EBEDEF;
+    /*background-color: #EBEDEF;*/
+    background-color: var(--prime-block-bg-color);
     padding: 10px;
     margin: 15px;
 }
@@ -90,4 +166,9 @@ p.project_intro {
 .pinboard_title {
     margin-left: 20px;
     margin-bottom: 0px;
+}
+
+.project h2 {
+    margin-left: 17px;
+    color: var(--title-text-color);
 }
